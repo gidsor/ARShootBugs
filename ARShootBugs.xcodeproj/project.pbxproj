@@ -23,6 +23,7 @@
 		C0BE15412158B20B00D8838E /* sprayBug.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0BE153B2158B20A00D8838E /* sprayBug.mp3 */; };
 		C0BE15422158B20B00D8838E /* catchBugspray.wav in Resources */ = {isa = PBXBuildFile; fileRef = C0BE153C2158B20B00D8838E /* catchBugspray.wav */; };
 		C0C82449215948E800C8E148 /* Level1.sks in Resources */ = {isa = PBXBuildFile; fileRef = C0C82448215948E800C8E148 /* Level1.sks */; };
+		C0C8244B215954D900C8E148 /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C8244A215954D900C8E148 /* Anchor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		C0BE153B2158B20A00D8838E /* sprayBug.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sprayBug.mp3; sourceTree = "<group>"; };
 		C0BE153C2158B20B00D8838E /* catchBugspray.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = catchBugspray.wav; sourceTree = "<group>"; };
 		C0C82448215948E800C8E148 /* Level1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level1.sks; sourceTree = "<group>"; };
+		C0C8244A215954D900C8E148 /* Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anchor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				C0BE15362158B20A00D8838E /* Sounds */,
 				C0BE15282158B1EC00D8838E /* Assets.xcassets */,
 				C0BE15222158B15E00D8838E /* Info.plist */,
+				C0C8244A215954D900C8E148 /* Anchor.swift */,
 			);
 			path = ARShootBugs;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0BE15332158B1FC00D8838E /* GameViewController.swift in Sources */,
+				C0C8244B215954D900C8E148 /* Anchor.swift in Sources */,
 				C0BE15352158B20200D8838E /* Types.swift in Sources */,
 				C0BE15322158B1FC00D8838E /* GameScene.swift in Sources */,
 				C0BE15172158B15C00D8838E /* AppDelegate.swift in Sources */,
