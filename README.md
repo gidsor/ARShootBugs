@@ -1,6 +1,9 @@
 # ARShootBugs
 ARShootBugs - игра с использованием дополненной реальности, в который требуется уничтожать жуков летающих вокруг вас.
 
+## Геймплей игры
+<img src="https://github.com/Gidsor/ARShootBugs/blob/master/ScreenRecording.gif" width=50%/>
+
 ## Лицензия
     MIT License
 
