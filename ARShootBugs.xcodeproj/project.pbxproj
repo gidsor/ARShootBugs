@@ -22,6 +22,7 @@
 		C0BE15402158B20B00D8838E /* sprayFirebug.wav in Resources */ = {isa = PBXBuildFile; fileRef = C0BE153A2158B20A00D8838E /* sprayFirebug.wav */; };
 		C0BE15412158B20B00D8838E /* sprayBug.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0BE153B2158B20A00D8838E /* sprayBug.mp3 */; };
 		C0BE15422158B20B00D8838E /* catchBugspray.wav in Resources */ = {isa = PBXBuildFile; fileRef = C0BE153C2158B20B00D8838E /* catchBugspray.wav */; };
+		C0C82449215948E800C8E148 /* Level1.sks in Resources */ = {isa = PBXBuildFile; fileRef = C0C82448215948E800C8E148 /* Level1.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		C0BE153A2158B20A00D8838E /* sprayFirebug.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sprayFirebug.wav; sourceTree = "<group>"; };
 		C0BE153B2158B20A00D8838E /* sprayBug.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sprayBug.mp3; sourceTree = "<group>"; };
 		C0BE153C2158B20B00D8838E /* catchBugspray.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = catchBugspray.wav; sourceTree = "<group>"; };
+		C0C82448215948E800C8E148 /* Level1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level1.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				C0BE152F2158B1FB00D8838E /* GameScene.swift */,
 				C0BE15342158B20200D8838E /* Types.swift */,
 				C0BE152B2158B1F200D8838E /* Actions.sks */,
+				C0C82448215948E800C8E148 /* Level1.sks */,
 				C0BE152E2158B1FB00D8838E /* GameScene.sks */,
 				C0BE151A2158B15C00D8838E /* Main.storyboard */,
 				C0BE151F2158B15E00D8838E /* LaunchScreen.storyboard */,
@@ -162,6 +165,7 @@
 			files = (
 				C0BE15402158B20B00D8838E /* sprayFirebug.wav in Resources */,
 				C0BE153E2158B20B00D8838E /* hitBug.wav in Resources */,
+				C0C82449215948E800C8E148 /* Level1.sks in Resources */,
 				C0BE15212158B15E00D8838E /* LaunchScreen.storyboard in Resources */,
 				C0BE15312158B1FC00D8838E /* GameScene.sks in Resources */,
 				C0BE15292158B1EC00D8838E /* Assets.xcassets in Resources */,
