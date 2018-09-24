@@ -14,6 +14,13 @@ class GameScene: SKScene {
         return view as! ARSKView
     }
     
+    var hasBugspray = false {
+        didSet {
+            let sightImageName = hasBugspray ? "bugspraySight" : "sight"
+            sight.texture = SKTexture(imageNamed: sightImageName)
+        }
+    }
+    
     var isWorldSetup = false
     var sight: SKSpriteNode!
     let gameSize = CGSize(width: 2, height: 2)
@@ -64,12 +71,33 @@ class GameScene: SKScene {
                 if let name = node.name, let type = NodeType(rawValue: name) {
                     anchor.type = type
                     sceneView.session.add(anchor: anchor)
+                    if anchor.type == .firebug {
+                        addBugSpray(to: currentFrame)
+                    }
                 }
                 
             }
         }
         
         isWorldSetup = true
+    }
+    
+    private func addBugSpray(to currentFrame: ARFrame) {
+        var translation = matrix_identity_float4x4
+        translation.columns.3.x = Float(drand48() * 2 - 1)
+        translation.columns.3.z = -Float(drand48() * 2 - 1)
+        translation.columns.3.y = Float(drand48() - 0.5)
+        let transform = currentFrame.camera.transform * translation
+        
+        let anchor = Anchor(transform: transform)
+        anchor.type = .bugspray
+        sceneView.session.add(anchor: anchor)
+    }
+    
+    private func remove(bugspray anchor: ARAnchor) {
+        run(Sounds.bugspray)
+        sceneView.session.remove(anchor: anchor)
+        hasBugspray = true
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -90,6 +118,15 @@ class GameScene: SKScene {
             if let bug = node as? SKSpriteNode {
                 bug.color = .black
                 bug.colorBlendFactor = blendFactor
+            }
+        }
+        
+        for anchor in currentFrame.anchors {
+            guard let node = sceneView.node(for: anchor), node.name == NodeType.bugspray.rawValue else { continue }
+            let distance = simd_distance(anchor.transform.columns.3, currentFrame.camera.transform.columns.3)
+            if distance < 0.1 {
+                remove(bugspray: anchor)
+                break
             }
         }
     }
