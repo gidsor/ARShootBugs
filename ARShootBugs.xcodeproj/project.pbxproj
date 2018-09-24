@@ -8,20 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		C0BE15172158B15C00D8838E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE15162158B15C00D8838E /* AppDelegate.swift */; };
-		C0BE15192158B15C00D8838E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE15182158B15C00D8838E /* ViewController.swift */; };
 		C0BE151C2158B15C00D8838E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BE151A2158B15C00D8838E /* Main.storyboard */; };
-		C0BE151E2158B15E00D8838E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0BE151D2158B15E00D8838E /* Assets.xcassets */; };
 		C0BE15212158B15E00D8838E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BE151F2158B15E00D8838E /* LaunchScreen.storyboard */; };
+		C0BE15292158B1EC00D8838E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0BE15282158B1EC00D8838E /* Assets.xcassets */; };
+		C0BE152D2158B1F300D8838E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = C0BE152B2158B1F200D8838E /* Actions.sks */; };
+		C0BE15312158B1FC00D8838E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C0BE152E2158B1FB00D8838E /* GameScene.sks */; };
+		C0BE15322158B1FC00D8838E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE152F2158B1FB00D8838E /* GameScene.swift */; };
+		C0BE15332158B1FC00D8838E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE15302158B1FB00D8838E /* GameViewController.swift */; };
+		C0BE15352158B20200D8838E /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE15342158B20200D8838E /* Types.swift */; };
+		C0BE153D2158B20B00D8838E /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = C0BE15372158B20A00D8838E /* win.wav */; };
+		C0BE153E2158B20B00D8838E /* hitBug.wav in Resources */ = {isa = PBXBuildFile; fileRef = C0BE15382158B20A00D8838E /* hitBug.wav */; };
+		C0BE153F2158B20B00D8838E /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = C0BE15392158B20A00D8838E /* lose.wav */; };
+		C0BE15402158B20B00D8838E /* sprayFirebug.wav in Resources */ = {isa = PBXBuildFile; fileRef = C0BE153A2158B20A00D8838E /* sprayFirebug.wav */; };
+		C0BE15412158B20B00D8838E /* sprayBug.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0BE153B2158B20A00D8838E /* sprayBug.mp3 */; };
+		C0BE15422158B20B00D8838E /* catchBugspray.wav in Resources */ = {isa = PBXBuildFile; fileRef = C0BE153C2158B20B00D8838E /* catchBugspray.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C0BE15132158B15C00D8838E /* ARShootBugs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARShootBugs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BE15162158B15C00D8838E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0BE15182158B15C00D8838E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0BE151B2158B15C00D8838E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C0BE151D2158B15E00D8838E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0BE15202158B15E00D8838E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0BE15222158B15E00D8838E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0BE15282158B1EC00D8838E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0BE152B2158B1F200D8838E /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		C0BE152E2158B1FB00D8838E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		C0BE152F2158B1FB00D8838E /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		C0BE15302158B1FB00D8838E /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		C0BE15342158B20200D8838E /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		C0BE15372158B20A00D8838E /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		C0BE15382158B20A00D8838E /* hitBug.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitBug.wav; sourceTree = "<group>"; };
+		C0BE15392158B20A00D8838E /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
+		C0BE153A2158B20A00D8838E /* sprayFirebug.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sprayFirebug.wav; sourceTree = "<group>"; };
+		C0BE153B2158B20A00D8838E /* sprayBug.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sprayBug.mp3; sourceTree = "<group>"; };
+		C0BE153C2158B20B00D8838E /* catchBugspray.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = catchBugspray.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +75,31 @@
 			isa = PBXGroup;
 			children = (
 				C0BE15162158B15C00D8838E /* AppDelegate.swift */,
-				C0BE15182158B15C00D8838E /* ViewController.swift */,
+				C0BE15302158B1FB00D8838E /* GameViewController.swift */,
+				C0BE152F2158B1FB00D8838E /* GameScene.swift */,
+				C0BE15342158B20200D8838E /* Types.swift */,
+				C0BE152B2158B1F200D8838E /* Actions.sks */,
+				C0BE152E2158B1FB00D8838E /* GameScene.sks */,
 				C0BE151A2158B15C00D8838E /* Main.storyboard */,
-				C0BE151D2158B15E00D8838E /* Assets.xcassets */,
 				C0BE151F2158B15E00D8838E /* LaunchScreen.storyboard */,
+				C0BE15362158B20A00D8838E /* Sounds */,
+				C0BE15282158B1EC00D8838E /* Assets.xcassets */,
 				C0BE15222158B15E00D8838E /* Info.plist */,
 			);
 			path = ARShootBugs;
+			sourceTree = "<group>";
+		};
+		C0BE15362158B20A00D8838E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C0BE15372158B20A00D8838E /* win.wav */,
+				C0BE15382158B20A00D8838E /* hitBug.wav */,
+				C0BE15392158B20A00D8838E /* lose.wav */,
+				C0BE153A2158B20A00D8838E /* sprayFirebug.wav */,
+				C0BE153B2158B20A00D8838E /* sprayBug.mp3 */,
+				C0BE153C2158B20B00D8838E /* catchBugspray.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +160,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0BE15402158B20B00D8838E /* sprayFirebug.wav in Resources */,
+				C0BE153E2158B20B00D8838E /* hitBug.wav in Resources */,
 				C0BE15212158B15E00D8838E /* LaunchScreen.storyboard in Resources */,
-				C0BE151E2158B15E00D8838E /* Assets.xcassets in Resources */,
+				C0BE15312158B1FC00D8838E /* GameScene.sks in Resources */,
+				C0BE15292158B1EC00D8838E /* Assets.xcassets in Resources */,
+				C0BE153D2158B20B00D8838E /* win.wav in Resources */,
+				C0BE15422158B20B00D8838E /* catchBugspray.wav in Resources */,
 				C0BE151C2158B15C00D8838E /* Main.storyboard in Resources */,
+				C0BE15412158B20B00D8838E /* sprayBug.mp3 in Resources */,
+				C0BE152D2158B1F300D8838E /* Actions.sks in Resources */,
+				C0BE153F2158B20B00D8838E /* lose.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +181,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0BE15192158B15C00D8838E /* ViewController.swift in Sources */,
+				C0BE15332158B1FC00D8838E /* GameViewController.swift in Sources */,
+				C0BE15352158B20200D8838E /* Types.swift in Sources */,
+				C0BE15322158B1FC00D8838E /* GameScene.swift in Sources */,
 				C0BE15172158B15C00D8838E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
