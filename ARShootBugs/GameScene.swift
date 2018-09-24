@@ -33,5 +33,21 @@ class GameScene: SKScene {
         if !isWorldSetup {
             setupWorld()
         }
+        
+        guard let currentFrame = sceneView.session.currentFrame,
+            let lightEstimate = currentFrame.lightEstimate else {
+                return
+        }
+        
+        let neutralIntensity: CGFloat = 1000
+        let ambientIntensity = min(lightEstimate.ambientIntensity, neutralIntensity)
+        let blendFactor = 1 - ambientIntensity / neutralIntensity
+        
+        for node in children {
+            if let bug = node as? SKSpriteNode {
+                bug.color = .black
+                bug.colorBlendFactor = blendFactor
+            }
+        }
     }
 }
