@@ -21,6 +21,9 @@ class GameScene: SKScene {
         }
     }
     
+    var isLoseGame = false
+    var isWinGame = false
+    
     var isWorldSetup = false
     var sight: SKSpriteNode!
     let gameSize = CGSize(width: 2, height: 2)
@@ -107,6 +110,14 @@ class GameScene: SKScene {
             setupWorld()
         }
         
+        if isWinGame {
+            print("You Win")
+        }
+        
+        if isLoseGame {
+            print("You Lose")
+        }
+        
         guard let currentFrame = sceneView.session.currentFrame,
             let lightEstimate = currentFrame.lightEstimate else {
                 return
@@ -124,11 +135,23 @@ class GameScene: SKScene {
         }
         
         for anchor in currentFrame.anchors {
-            guard let node = sceneView.node(for: anchor), node.name == NodeType.bugspray.rawValue else { continue }
-            let distance = simd_distance(anchor.transform.columns.3, currentFrame.camera.transform.columns.3)
-            if distance < 0.1 {
-                remove(bugspray: anchor)
-                break
+            // Check collision with bugs and bugspray
+            if let node = sceneView.node(for: anchor) {
+                if node.name == NodeType.bugspray.rawValue {
+                    let distanceToBugspray = simd_distance(anchor.transform.columns.3, currentFrame.camera.transform.columns.3)
+                    if distanceToBugspray < 0.1 {
+                        remove(bugspray: anchor)
+                        break
+                    }
+                }
+                
+                if node.name == NodeType.bug.rawValue || node.name == NodeType.firebug.rawValue {
+                    let distanceToBug = simd_distance(anchor.transform.columns.3, currentFrame.camera.transform.columns.3)
+                    if distanceToBug < 0.1 {
+                        isLoseGame = true
+                        break
+                    }
+                }
             }
         }
     }

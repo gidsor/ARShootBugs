@@ -11,7 +11,6 @@
 		C0BE151C2158B15C00D8838E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BE151A2158B15C00D8838E /* Main.storyboard */; };
 		C0BE15212158B15E00D8838E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BE151F2158B15E00D8838E /* LaunchScreen.storyboard */; };
 		C0BE15292158B1EC00D8838E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0BE15282158B1EC00D8838E /* Assets.xcassets */; };
-		C0BE152D2158B1F300D8838E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = C0BE152B2158B1F200D8838E /* Actions.sks */; };
 		C0BE15322158B1FC00D8838E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE152F2158B1FB00D8838E /* GameScene.swift */; };
 		C0BE15332158B1FC00D8838E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE15302158B1FB00D8838E /* GameViewController.swift */; };
 		C0BE15352158B20200D8838E /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE15342158B20200D8838E /* Types.swift */; };
@@ -32,7 +31,6 @@
 		C0BE15202158B15E00D8838E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0BE15222158B15E00D8838E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0BE15282158B1EC00D8838E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C0BE152B2158B1F200D8838E /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		C0BE152F2158B1FB00D8838E /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		C0BE15302158B1FB00D8838E /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		C0BE15342158B20200D8838E /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
@@ -77,17 +75,15 @@
 			isa = PBXGroup;
 			children = (
 				C0BE15162158B15C00D8838E /* AppDelegate.swift */,
-				C0BE15302158B1FB00D8838E /* GameViewController.swift */,
-				C0BE152F2158B1FB00D8838E /* GameScene.swift */,
-				C0BE15342158B20200D8838E /* Types.swift */,
-				C0BE152B2158B1F200D8838E /* Actions.sks */,
-				C0C82448215948E800C8E148 /* Level1.sks */,
 				C0BE151A2158B15C00D8838E /* Main.storyboard */,
 				C0BE151F2158B15E00D8838E /* LaunchScreen.storyboard */,
+				C0BE7DA3215AA4E100B19202 /* Model */,
+				C0BE7DA0215AA4A700B19202 /* View */,
+				C0BE7D9F215AA48200B19202 /* Scene */,
+				C0C82448215948E800C8E148 /* Level1.sks */,
 				C0BE15362158B20A00D8838E /* Sounds */,
 				C0BE15282158B1EC00D8838E /* Assets.xcassets */,
 				C0BE15222158B15E00D8838E /* Info.plist */,
-				C0C8244A215954D900C8E148 /* Anchor.swift */,
 			);
 			path = ARShootBugs;
 			sourceTree = "<group>";
@@ -103,6 +99,31 @@
 				C0BE153C2158B20B00D8838E /* catchBugspray.wav */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		C0BE7D9F215AA48200B19202 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				C0BE152F2158B1FB00D8838E /* GameScene.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		C0BE7DA0215AA4A700B19202 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0BE15302158B1FB00D8838E /* GameViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0BE7DA3215AA4E100B19202 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0C8244A215954D900C8E148 /* Anchor.swift */,
+				C0BE15342158B20200D8838E /* Types.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +193,6 @@
 				C0BE15422158B20B00D8838E /* catchBugspray.wav in Resources */,
 				C0BE151C2158B15C00D8838E /* Main.storyboard in Resources */,
 				C0BE15412158B20B00D8838E /* sprayBug.mp3 in Resources */,
-				C0BE152D2158B1F300D8838E /* Actions.sks in Resources */,
 				C0BE153F2158B20B00D8838E /* lose.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
