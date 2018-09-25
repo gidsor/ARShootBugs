@@ -60,7 +60,7 @@ class GameScene: SKScene {
     }
     
     private func setupWorld() {
-        guard let currentFrame = sceneView.session.currentFrame, let scene = SKScene(fileNamed: "Level1") else { return }
+        guard let currentFrame = sceneView.session.currentFrame, let scene = SKScene(fileNamed: "GameScene") else { return }
         
         for node in scene.children {
             if let node = node as? SKSpriteNode {
@@ -116,6 +116,10 @@ class GameScene: SKScene {
         
         if isLoseGame {
             print("You Lose")
+            let revealGameScene = SKTransition.fade(withDuration: 0.5)
+            let loseScene = LoseScene(size: self.size)
+            loseScene.scaleMode = SKSceneScaleMode.aspectFill
+            self.view?.presentScene(loseScene, transition:revealGameScene)
         }
         
         guard let currentFrame = sceneView.session.currentFrame,
