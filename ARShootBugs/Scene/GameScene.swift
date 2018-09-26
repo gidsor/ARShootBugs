@@ -9,7 +9,15 @@
 import ARKit
 
 class GameScene: SKScene {
-
+    
+    let gameSize = CGSize(width: 2, height: 2)
+    
+    var isWorldSetup = false
+    var isVictoryGame = false
+    var isDefeatGame = false
+    
+    var sight: SKSpriteNode!
+    
     var sceneView: ARSKView {
         return view as! ARSKView
     }
@@ -20,13 +28,6 @@ class GameScene: SKScene {
             sight.texture = SKTexture(imageNamed: sightImageName)
         }
     }
-    
-    var isDefeatGame = false
-    var isVictoryGame = false
-    
-    var isWorldSetup = false
-    var sight: SKSpriteNode!
-    let gameSize = CGSize(width: 2, height: 2)
     
     override func didMove(to view: SKView) {
         sight = SKSpriteNode(imageNamed: "sight")

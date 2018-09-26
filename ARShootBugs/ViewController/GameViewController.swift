@@ -23,7 +23,7 @@ class GameViewController: UIViewController {
             scene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
             view.presentScene(scene)
             
-            view.showsFPS = true
+            //view.showsFPS = true
             //view.showsNodeCount = true
         }
     }

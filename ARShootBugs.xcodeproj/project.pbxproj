@@ -111,8 +111,8 @@
 			children = (
 				C08BE0F8215B7470008C29B5 /* SceneManager.swift */,
 				C0BE152F2158B1FB00D8838E /* GameScene.swift */,
-				C026433F215ABE1700EB6627 /* DefeatScene.swift */,
 				C08BE0F2215B6D0F008C29B5 /* VictoryScene.swift */,
+				C026433F215ABE1700EB6627 /* DefeatScene.swift */,
 				C0C82448215948E800C8E148 /* GameScene.sks */,
 			);
 			path = Scene;
