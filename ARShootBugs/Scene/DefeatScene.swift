@@ -34,7 +34,7 @@ class DefeatScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        //self.sceneView.presentScene(GameScene())
+        SceneManager.instance.loadScene(scene: GameScene())
     }
     
     override func update(_ currentTime: TimeInterval) {

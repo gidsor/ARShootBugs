@@ -18,14 +18,14 @@ class GameViewController: UIViewController {
         if let view = self.view as? ARSKView {
             sceneView = view
             sceneView.delegate = self
-            let scene = GameScene(size: view.bounds.size)
-            scene.scaleMode = .resizeFill
-            scene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-            view.presentScene(scene)
+            
+            SceneManager.instance.sceneView = sceneView
+            SceneManager.instance.loadScene(scene: GameScene())
             
             //view.showsFPS = true
             //view.showsNodeCount = true
         }
+        
     }
 
     override var shouldAutorotate: Bool {

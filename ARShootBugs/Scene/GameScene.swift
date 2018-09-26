@@ -119,11 +119,11 @@ class GameScene: SKScene {
         }
         
         if isVictoryGame {
-            SceneManager.instance.loadScene(view: self.view!, scene: VictoryScene(size: self.size))
+            SceneManager.instance.loadScene(scene: VictoryScene())
         }
         
         if isDefeatGame {
-            SceneManager.instance.loadScene(view: self.view!, scene: DefeatScene(size: self.size))
+            SceneManager.instance.loadScene(scene: DefeatScene())
         }
         
         guard let currentFrame = sceneView.session.currentFrame,

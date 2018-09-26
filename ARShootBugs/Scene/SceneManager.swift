@@ -12,18 +12,33 @@ class SceneManager {
     
     static let instance = SceneManager()
     
+    var sceneView: ARSKView?
+    
     private init() { }
     
-    func loadScene(view: SKView, scene: SKScene) {
+    func loadScene(scene: SKScene) {
         
         if scene is VictoryScene || scene is DefeatScene {
-            let revealGameScene = SKTransition.fade(withDuration: 0.5)
-            scene.scaleMode = SKSceneScaleMode.aspectFill
-            view.presentScene(scene, transition:revealGameScene)
+            if let view = sceneView {
+                let revealGameScene = SKTransition.fade(withDuration: 0.5)
+                scene.size = view.bounds.size
+                scene.scaleMode = SKSceneScaleMode.aspectFill
+                view.presentScene(scene, transition:revealGameScene)
+            }
         }
         
         if scene is GameScene {
-            // make load new level or restart game
+            if let view = sceneView {
+                
+                if let configuration = sceneView?.session.configuration {
+                    sceneView?.session.run(configuration, options: .resetTracking)
+                }
+                
+                scene.size = view.bounds.size
+                scene.scaleMode = .resizeFill
+                scene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+                view.presentScene(scene)
+            }
         }
     }
 }
