@@ -10,6 +10,10 @@ import ARKit
 
 class VictoryScene: SKScene {
     
+    override func sceneDidLoad() {
+        run(Sounds.win)
+    }
+    
     override func didMove(to view: SKView) {
         let loseNode = SKLabelNode(text: "You Win")
         loseNode.fontSize = 25

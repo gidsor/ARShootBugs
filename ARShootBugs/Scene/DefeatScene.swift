@@ -10,6 +10,10 @@ import ARKit
 
 class DefeatScene: SKScene {
     
+    override func sceneDidLoad() {
+        run(Sounds.lose)
+    }
+    
     override func didMove(to view: SKView) {
         let loseNode = SKLabelNode(text: "You Lose")
         loseNode.fontSize = 25
