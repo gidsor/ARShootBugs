@@ -24,7 +24,7 @@ class GameViewController: UIViewController {
             view.presentScene(scene)
             
             view.showsFPS = true
-            view.showsNodeCount = true
+            //view.showsNodeCount = true
         }
     }
 

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C026433E215ABDC900EB6627 /* LoseScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C026433D215ABDC900EB6627 /* LoseScene.sks */; };
-		C0264340215ABE1700EB6627 /* LoseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026433F215ABE1700EB6627 /* LoseScene.swift */; };
+		C0264340215ABE1700EB6627 /* DefeatScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026433F215ABE1700EB6627 /* DefeatScene.swift */; };
+		C08BE0F3215B6D0F008C29B5 /* VictoryScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BE0F2215B6D0F008C29B5 /* VictoryScene.swift */; };
 		C0BE15172158B15C00D8838E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE15162158B15C00D8838E /* AppDelegate.swift */; };
 		C0BE151C2158B15C00D8838E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BE151A2158B15C00D8838E /* Main.storyboard */; };
 		C0BE15212158B15E00D8838E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BE151F2158B15E00D8838E /* LaunchScreen.storyboard */; };
@@ -27,8 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C026433D215ABDC900EB6627 /* LoseScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LoseScene.sks; sourceTree = "<group>"; };
-		C026433F215ABE1700EB6627 /* LoseScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoseScene.swift; sourceTree = "<group>"; };
+		C026433F215ABE1700EB6627 /* DefeatScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefeatScene.swift; sourceTree = "<group>"; };
+		C08BE0F2215B6D0F008C29B5 /* VictoryScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictoryScene.swift; sourceTree = "<group>"; };
 		C0BE15132158B15C00D8838E /* ARShootBugs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARShootBugs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BE15162158B15C00D8838E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0BE151B2158B15C00D8838E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,8 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				C0BE152F2158B1FB00D8838E /* GameScene.swift */,
-				C026433F215ABE1700EB6627 /* LoseScene.swift */,
-				C026433D215ABDC900EB6627 /* LoseScene.sks */,
+				C026433F215ABE1700EB6627 /* DefeatScene.swift */,
+				C08BE0F2215B6D0F008C29B5 /* VictoryScene.swift */,
 				C0C82448215948E800C8E148 /* GameScene.sks */,
 			);
 			path = Scene;
@@ -192,7 +192,6 @@
 			files = (
 				C0BE15402158B20B00D8838E /* sprayFirebug.wav in Resources */,
 				C0BE153E2158B20B00D8838E /* hitBug.wav in Resources */,
-				C026433E215ABDC900EB6627 /* LoseScene.sks in Resources */,
 				C0C82449215948E800C8E148 /* GameScene.sks in Resources */,
 				C0BE15212158B15E00D8838E /* LaunchScreen.storyboard in Resources */,
 				C0BE15292158B1EC00D8838E /* Assets.xcassets in Resources */,
@@ -214,7 +213,8 @@
 				C0BE15332158B1FC00D8838E /* GameViewController.swift in Sources */,
 				C0C8244B215954D900C8E148 /* Anchor.swift in Sources */,
 				C0BE15352158B20200D8838E /* Types.swift in Sources */,
-				C0264340215ABE1700EB6627 /* LoseScene.swift in Sources */,
+				C0264340215ABE1700EB6627 /* DefeatScene.swift in Sources */,
+				C08BE0F3215B6D0F008C29B5 /* VictoryScene.swift in Sources */,
 				C0BE15322158B1FC00D8838E /* GameScene.swift in Sources */,
 				C0BE15172158B15C00D8838E /* AppDelegate.swift in Sources */,
 			);

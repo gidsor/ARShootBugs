@@ -21,8 +21,8 @@ class GameScene: SKScene {
         }
     }
     
-    var isLoseGame = false
-    var isWinGame = false
+    var isDefeatGame = false
+    var isVictoryGame = false
     
     var isWorldSetup = false
     var sight: SKSpriteNode!
@@ -106,18 +106,29 @@ class GameScene: SKScene {
     }
     
     override func update(_ currentTime: TimeInterval) {
+        if let currentFrame = sceneView.session.currentFrame {
+            if isWorldSetup && currentFrame.anchors.count == 0 {
+                isVictoryGame = true
+            }
+        }
+        
         if !isWorldSetup {
             setupWorld()
+            sleep(1)
         }
         
-        if isWinGame {
+        if isVictoryGame {
             print("You Win")
+            let revealGameScene = SKTransition.fade(withDuration: 0.5)
+            let victoryScene = VictoryScene(size: self.size)
+            victoryScene.scaleMode = SKSceneScaleMode.aspectFill
+            self.view?.presentScene(victoryScene, transition:revealGameScene)
         }
         
-        if isLoseGame {
+        if isDefeatGame {
             print("You Lose")
             let revealGameScene = SKTransition.fade(withDuration: 0.5)
-            let loseScene = LoseScene(size: self.size)
+            let loseScene = DefeatScene(size: self.size)
             loseScene.scaleMode = SKSceneScaleMode.aspectFill
             self.view?.presentScene(loseScene, transition:revealGameScene)
         }
@@ -152,11 +163,12 @@ class GameScene: SKScene {
                 if node.name == NodeType.bug.rawValue || node.name == NodeType.firebug.rawValue {
                     let distanceToBug = simd_distance(anchor.transform.columns.3, currentFrame.camera.transform.columns.3)
                     if distanceToBug < 0.1 {
-                        isLoseGame = true
+                        isDefeatGame = true
                         break
                     }
                 }
             }
         }
+        
     }
 }
