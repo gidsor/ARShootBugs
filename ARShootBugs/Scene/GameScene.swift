@@ -118,19 +118,11 @@ class GameScene: SKScene {
         }
         
         if isVictoryGame {
-            print("You Win")
-            let revealGameScene = SKTransition.fade(withDuration: 0.5)
-            let victoryScene = VictoryScene(size: self.size)
-            victoryScene.scaleMode = SKSceneScaleMode.aspectFill
-            self.view?.presentScene(victoryScene, transition:revealGameScene)
+            SceneManager.instance.loadScene(view: self.view!, scene: VictoryScene(size: self.size))
         }
         
         if isDefeatGame {
-            print("You Lose")
-            let revealGameScene = SKTransition.fade(withDuration: 0.5)
-            let loseScene = DefeatScene(size: self.size)
-            loseScene.scaleMode = SKSceneScaleMode.aspectFill
-            self.view?.presentScene(loseScene, transition:revealGameScene)
+            SceneManager.instance.loadScene(view: self.view!, scene: DefeatScene(size: self.size))
         }
         
         guard let currentFrame = sceneView.session.currentFrame,
